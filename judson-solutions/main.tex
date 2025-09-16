@@ -1,0 +1,38 @@
+%! Author = jhilyar
+%! Date = 9/8/25
+
+\documentclass[fleqn]{scrbook}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[bindingoffset=0.5cm,margin=3cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{indentfirst}
+\usepackage{letltxmacro}
+\usepackage{enumitem}
+
+\raggedbottom
+
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\sim{\thicksim}
+\newcommand\hr{\par\noindent\rule{\textwidth}{0.4pt}}
+\newcommand\hrlist{\par\noindent\rule{\dimexpr\textwidth-0.5in}{0.4pt}}
+\newcommand{\emdash}{{\bfseries---}}
+
+\newlist{exlist}{enumerate}{1}
+\setlist[exlist]{label=(\alph*), leftmargin=3.5\parindent}
+
+\title{Solutions for Abstract Algebra: Theory and Applications by Tom Judson}
+\subtitle{For the 2022 Annual Edition}
+\author{Justin Hilyard}
+\date{}
+
+\begin{document}
+    \maketitle
+    \include{Chapter01}
+\end{document}
