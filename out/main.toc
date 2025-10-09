@@ -1,4 +1,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Preliminaries}{5}{chapter.1}%
 \contentsline {chapter}{\numberline {2}The Integers}{17}{chapter.2}%
+\contentsline {section}{\numberline {12.}Power Sets.}{22}{section.2.12}%
+\contentsline {subsection}{\numberline {12.1}Inductive proof}{22}{subsection.2.12.1}%
+\contentsline {subsection}{\numberline {12.2}Direct proof}{23}{subsection.2.12.2}%
+\contentsline {section}{\numberline {17.}Fibonacci Numbers}{24}{section.2.17}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

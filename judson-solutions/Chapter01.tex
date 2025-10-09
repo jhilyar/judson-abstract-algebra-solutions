@@ -47,8 +47,8 @@ Prove $A \cup \emptyset = A$ and $A \cap \emptyset = \emptyset$.
     \\
     A \cap \emptyset &= \{x : x \in A \land x \in \emptyset\} \\
     &= \{\} \\
-    &= \emptyset
-\end{align*}\qed
+    &= \emptyset \qedalign
+\end{align*}
 
 \section{}\label{sec:1-5}
 
@@ -61,8 +61,8 @@ Prove $A \cup B = B \cup A$ and $A \cap B = B \cap A$.
     \\
     A \cap B &= \{x : x \in A \land x \in B\} \\
     &= \{x : x \in B \land x \in A\} \\
-    &= B \cap A
-\end{align*}\qed
+    &= B \cap A \qedalign
+\end{align*}
 
 \section{}\label{sec:1-6}
 
@@ -74,8 +74,8 @@ Prove $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$.
     &= \{x : (x \in A \lor x \in B) \land (x \in A \lor x \in C)\} \\
     &= \{x : x \in (A \cup B) \lor x \in (A \cup C)\} \\
     &= \{x : x \in (A \cup B) \cap (A \cup C)\} \\
-    &= (A \cup B) \cap (A \cup C)
-\end{align*}\qed
+    &= (A \cup B) \cap (A \cup C) \qedalign
+\end{align*}
 \pagebreak
 \section{}\label{sec:1-7}
 
@@ -87,8 +87,8 @@ Prove $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$.
     &= \{x : (x \in A \land x \in B) \lor (x \in A \land x \in C)\} \\
     &= \{x : x \in (A \cap B) \land x \in (A \cap C)\} \\
     &= \{x : x \in (A \cap B) \cup (A \cap C)\} \\
-    &= (A \cap B) \cup (A \cap C)
-\end{align*}\qed
+    &= (A \cap B) \cup (A \cap C) \qedalign
+\end{align*}
 
 \section{}\label{sec:1-8}
 
@@ -114,8 +114,8 @@ Prove $(A \cap B)' = A' \cup B'$.
 \begin{align*}
     (A \cap B)' &= \{x : x \notin A \cap B\} \\
     &= \{x : x \notin A \lor x \notin B\} \\
-    &= A' \cup B'
-\end{align*}\qed
+    &= A' \cup B'\qedalign
+\end{align*}
 \pagebreak
 \section{}\label{sec:1-10}
 
@@ -130,8 +130,8 @@ Therefore
 \begin{align*}
     A \cup B &= \{x : x \in A \cup B\} \\
     &= \{x : x \in A \cap B \lor x \in A \setminus B \lor x \in B \setminus A\} \\
-    &= (A \cap B) \cup (A \setminus B) \cup (B \setminus A).
-\end{align*}\qed
+    &= (A \cap B) \cup (A \setminus B) \cup (B \setminus A).\qedalign
+\end{align*}
 
 \section{}\label{sec:1-11}
 
@@ -141,8 +141,8 @@ Prove $(A \cup B) \times C = (A \times C) \cup (B \times C)$.
     (A \cup B) \times C &= \{(x, y) : x \in A \cup B \land y \in C\} \\
     &= \{(x, y) : (x \in A \lor x \in B) \land y \in C\} \\
     &= \{(x, y) : (x \in A \land y \in C) \lor (x \in B \land y \in C)\} \\
-    &= (A \times C) \cup (B \times C)
-\end{align*}\qed
+    &= (A \times C) \cup (B \times C)\qedalign
+\end{align*}
 
 \section{}\label{sec:1-12}
 
@@ -152,8 +152,8 @@ Prove $(A \cap B) \setminus B = \emptyset$.
     (A \cap B) \setminus B &= \{x : x \in (A \cap B) \land x \notin B\} \\
     &= \{x : x \in A \land x \in B \land x \notin B\} \\
     &= \{\} \\
-    &= \emptyset
-\end{align*}\qed
+    &= \emptyset\qedalign
+\end{align*}
 
 \section{}\label{sec:1-13}
 
@@ -164,8 +164,8 @@ Prove $(A \cup B) \setminus B = A \setminus B$.
     &= \{x : (x \in A \lor x \in B) \land x \notin B\} \\
     &= \{x : (x \in A \land x \notin B) \lor (x \in B \land x \notin B)\} \\
     &= \{x : x \in A \land x \notin B\} \\
-    &= A \setminus B
-\end{align*}\qed
+    &= A \setminus B\qedalign
+\end{align*}
 \pagebreak
 \section{}\label{sec:1-14}
 
@@ -175,8 +175,8 @@ Prove $A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)$.
     A \setminus (B \cup C) &= \{x : x \in A \land x \notin (B \cup C)\} \\
     &= \{x : x \in A \land (x \notin B \land x \notin C)\} \\
     &= \{x : (x \in A \land x \notin B) \land (x \in A \land x \notin C)\} \\
-    &= (A \setminus B) \cap (A \setminus C)
-\end{align*}\qed
+    &= (A \setminus B) \cap (A \setminus C)\qedalign
+\end{align*}
 
 \section{}\label{sec:1-15}
 
@@ -188,8 +188,8 @@ Prove $A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)$.
     &= \{x : (x \in A \land x \in B \land x \notin A) \land (x \in A \land x \in B \land x \notin C)\} \\
     &= \{x : x \in A \land x \in B \land x \notin C\} \\
     &= \{x : x \in A \land x \in B \setminus C\} \\
-    &= A \cap (B \setminus C)
-\end{align*}\qed
+    &= A \cap (B \setminus C)\qedalign
+\end{align*}
 
 \section{}\label{sec:1-16}
 
@@ -198,13 +198,15 @@ Prove $(A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)$.
 \begin{align*}
     (A \setminus B) \cup (B \setminus A) &= \{x : x \in (A \setminus B) \lor x \in (B \setminus A)\} \\
     &= \{x : (x \in A \land x \notin B) \lor (x \in B \land x \notin A)\} \\
-    &= \{x : (x \in A \lor x \in B) \land (x \notin B \lor x \in B) \\
-    & \qquad \qquad \land (x \in A \lor x \notin A) \land (x \notin B \lor x \notin A)\} \\
+    &= \begin{breakalign}
+            \{x : (x \in A \lor x \in B) \land (x \notin B \lor x \in B) \\
+            \land (x \in A \lor x \notin A) \land (x \notin B \lor x \notin A)\}
+       \end{breakalign} \\
     &= \{x : (x \in A \lor x \in B) \land (x \notin B \lor x \notin A)\} \\
     &= \{x : (x \in A \lor x \in B) \land (x \in B \land x \in A)'\} \\
     &= \{x : x \in A \cup B \land x \notin A \cap B\} \\
-    &= (A \cup B) \setminus (A \cap B) \\
-\end{align*}\qed
+    &= (A \cup B) \setminus (A \cap B) \qedalign
+\end{align*}
 \pagebreak
 \section{}\label{sec:1-17}
 
@@ -267,7 +269,6 @@ Show that $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
 Take any $a \in A$ and let $b \in B$, $c \in C$ be such that $f(a) = b$ and $g(b) = c$, or equivalently that $(g \circ f)(a) = c$. It thus follows that $(g \circ f)^{-1}(c) = a.$
 
 Now, evaluate $(f^{-1} \circ g^{-1})(c)$. By our previous definitions, we have $f^{-1}(g^{-1}(c)) = f^{-1}(b) = a$.
-
 \qed
 
 \section{}\label{sec:1-20}
@@ -276,7 +277,7 @@ Define a function $f: \mathbb{N} \rightarrow \mathbb{N}$ that is one-to-one but 
 \hr
 \[f(n) = n + 1\]
 
-For any two $m, n \in \mathbb{N}$, $m \neq n$ implies $m + 1 \neq n + 1$. However, there is no $n \in \mathbb{N}$ such that $f(n) = 0$.
+For any two $m, n \in \mathbb{N}$, $m \neq n$ implies $m + 1 \neq n + 1$. However, there is no $n \in \mathbb{N}$ such that $f(n) = 1$.
 
 \section{}\label{sec:1-21}
 
@@ -359,11 +360,9 @@ Let $f:X \rightarrow Y$ be a map with $A_1, A_2 \subset X$ and $B_1, B_2 \subset
 
     \medskip
 
-    The opposite direction follows similarly.
-
-    \qed
+    The opposite direction follows similarly.\qed
     \pagebreak
-    \item Prove $f(A_1 \cap A_2) \subset f(A_1) \cap f(A_2)$. Give an example in which equality fails.
+    \item\label{funcint} Prove $f(A_1 \cap A_2) \subset f(A_1) \cap f(A_2)$. Give an example in which equality fails.
     \hrlist
 
     Let $y \in f(A_1 \cap A_2)$. By definition, this means there is some $x \in A_1 \cap A_2$ where $f(x) = y$. It must be the case that $x \in A_1 \land x \in A_2$, and so $f(x) \in f(A_1) \land f(x) \in f(A_2)$. Therefore $f(x) \in f(A_1) \cap f(A_2)$, and so $f(A_1 \cup A_2) \subset f(A_1) \cup f(A_2)$.
@@ -378,19 +377,15 @@ Let $f:X \rightarrow Y$ be a map with $A_1, A_2 \subset X$ and $B_1, B_2 \subset
 
     \medskip
 
-    (Note that if $f$ is one-to-one, then we do know that $f(x_1) = f(x_2)$ implies $x_1 = x_2$, and so we can achieve equality of sets.)
-    
-    \qed
-    \item\label{funcunion} Prove $f^{-1}(B_1 \cup B_2) = f^{-1}(B_1) \cup f^{-1}(B_2)$, where $f^{-1}(B) = \{x \in X : f(x) \in B\}$.
+    (Note that if $f$ is one-to-one, then we do know that $f(x_1) = f(x_2)$ implies $x_1 = x_2$, and so we can achieve equality of sets.)\qed
+    \item Prove $f^{-1}(B_1 \cup B_2) = f^{-1}(B_1) \cup f^{-1}(B_2)$, where $f^{-1}(B) = \{x \in X : f(x) \in B\}$.
     \hrlist
 
     Let $x \in f^{-1}(B_1 \cup B_2)$. By definition, this means there is some $y \in B_1 \cup B_2$ where $f^{-1}(y) = x$. It must be the case that $y \in B_1 \lor y \in B_2$, and so $f^{-1}(y) \in f^{-1}(B_1) \lor f^{-1}(y) \in f^{-1}(B_2)$. Therefore $f^{-1}(y) \in f^{-1}(B_1) \cup f^{-1}(B_2)$, and so $f^{-1}(B_1 \cup B_2) \subset f^{-1}(B_1) \cup f^{-1}(B_2)$.
 
     \medskip
 
-    The opposite direction follows similarly.
-
-    \qed
+    The opposite direction follows similarly.\qed
     \item Prove $f^{-1}(B_1 \cap B_2) = f^{-1}(B_1) \cap f^{-1}(B_2)$.
     \hrlist
 
@@ -398,13 +393,11 @@ Let $f:X \rightarrow Y$ be a map with $A_1, A_2 \subset X$ and $B_1, B_2 \subset
 
     \medskip
 
-    Now, let $x \in f^{-1}(B_1) \cap f^{-1}(B_2)$. Therefore, $x \in f^{-1}(B_1) \land x \in f^{-1}(B_2)$. In contrast to~\ref{funcunion}, we can continue further here: this implies that there must exist some $y_1, y_2 \in B$ such that $y_1 \in B_1 \land y_2 \in B_2$. However, as $f$ is a mapping, we must have that $y_1 = y_2 = y$, and so $y \in B_1 \cap B_2$, and thus $x \in f^{-1}(B_1 \cap B_2)$. Therefore, $f^{-1}(B_1) \cap f^{-1}(B_2) \subset f^{-1}(B_1 \cap B_2)$.
+    Now, let $x \in f^{-1}(B_1) \cap f^{-1}(B_2)$. Therefore, $x \in f^{-1}(B_1) \land x \in f^{-1}(B_2)$. In contrast to~\ref{funcint}, we can continue further here: this implies that there must exist some $y_1, y_2 \in B$ such that $y_1 \in B_1 \land y_2 \in B_2$. However, as $f$ is a mapping, we must have that $y_1 = y_2 = y$, and so $y \in B_1 \cap B_2$, and thus $x \in f^{-1}(B_1 \cap B_2)$. Therefore, $f^{-1}(B_1) \cap f^{-1}(B_2) \subset f^{-1}(B_1 \cap B_2)$.
 
     \medskip
 
-    Thus, $f^{-1}(B_1 \cap B_2) = f^{-1}(B_1) \cap f^{-1}(B_2)$.
-
-    \qed
+    Thus, $f^{-1}(B_1 \cap B_2) = f^{-1}(B_1) \cap f^{-1}(B_2)$.\qed
     \pagebreak
     \item Prove $f^{-1}(Y \setminus B_1) = X \setminus f^{-1}(B_1)$.
     \hrlist
@@ -413,9 +406,7 @@ Let $f:X \rightarrow Y$ be a map with $A_1, A_2 \subset X$ and $B_1, B_2 \subset
 
     \medskip
 
-    The opposite direction follows similarly.
-
-    \qed
+    The opposite direction follows similarly.\qed
 \end{exlist}
 
 \section{}\label{sec:1-25}

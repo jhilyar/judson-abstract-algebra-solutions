@@ -8,25 +8,39 @@
 \usepackage[T1]{fontenc}
 \usepackage[bindingoffset=0.5cm,margin=3cm]{geometry}
 
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amsthm}
+\usepackage{amssymb, amsmath, amsthm, amsfonts}
 \usepackage{indentfirst}
 \usepackage{letltxmacro}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage{mathtools}
 \hypersetup{
     colorlinks
 }
 
 \raggedbottom
 
-\renewcommand\thesection{\arabic{section}.}
-\renewcommand\sim{\thicksim}
-\newcommand\hr{\par\noindent\rule{\textwidth}{0.4pt}}
-\newcommand\hrlist{\par\noindent\rule{\dimexpr\textwidth-0.53in}{0.4pt}}
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\sim}{\thicksim}
+\newcommand{\qedalign}{\tag*{\qedsymbol}}
+\newcommand{\hr}{\par\noindent\rule{\textwidth}{0.4pt}}
+\newcommand{\hrlist}{\par\noindent\rule{\dimexpr\textwidth-0.53in}{0.4pt}}
+\newcommand{\divides}{\mid}
+\newcommand{\notdivides}{\nmid}
 \newcommand{\emdash}{{\bfseries---}}
+\newcommand{\define}[1]{\textbf{\textit{#1}}}
+\newcommand{\powerset}{\mathcal{P}}
+
+\newenvironment{breakalign}{%
+    \multlined[t][4in]}
+    {\endmultlined}
+
+\newenvironment{breakitem}{%
+    \multlined[t][3.5in]}
+    {\endmultlined}
+
+\DeclareMathOperator{\lcm}{lcm}
 
 \newlist{exlist}{enumerate}{1}
 \setlist[exlist]{

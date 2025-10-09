@@ -1,3 +1,458 @@
 \chapter{The Integers}\label{ch:integers}
 
 \section{}\label{sec:2-1}
+
+Prove that
+\[1^2 + 2^2 + \dots + n^2 = \frac{n(n+1)(2n+1)}{6}\]
+
+for $n \in \mathbb{N}$.
+\hr
+
+For $n=1$, $1^2 = 1 = \frac{1 \cdot 2 \cdot 3}{6}$.
+
+Assume that $\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}$. Then
+\begin{align*}
+    \sum_{k=1}^{n+1} k^2 &= (n + 1)^2 + \sum_{k=1}^n n^2 \\
+    &= n^2 + 2n + 1 + \frac{n(n+1)(2n+1)}{6} \\
+    &= \frac{1}{6} \cdot (6n^2 + 12n + 6 + 2n^3 + 3n^2 + n) \\
+    &= \frac{1}{6} \cdot (2n^3 + 9n^2 + 13n + 6) \\
+    &= \frac{(n+1)(n+2)(2n+3)}{6}.\qedalign
+\end{align*}
+\pagebreak
+\section{}\label{sec:2-2}
+
+Prove that
+\[1^2 + 2^2 + \dots + n^3 = \frac{n^2(n+1)^2}{4}\]
+
+for $n \in \mathbb{N}$.
+\hr
+
+For $n=1$, $1^2 = 1 = \frac{1 \cdot 4}{4}$.
+
+Assume that $\sum_{k=1}^n k^3 = \frac{n^2(n+1)^2}{4}$. Then
+\begin{align*}
+    \sum_{k=1}^{n+1} k^3 &= (n + 1)^3 + \sum_{k=1}^n n^3 \\
+    &= n^3 + 3n^2 + 3n + 1 + \frac{n^2(n+1)^2}{4} \\
+    &= \frac{1}{4} \cdot (4n^3 + 12n^2 + 12n + 4 + n^4 + 2n^3 + n^2) \\
+    &= \frac{1}{4} \cdot (n^4 + 6n^3 + 13n^2 + 12n + 4) \\
+    &= \frac{(n+1)^2(n+2)^2}{4}.\qedalign
+\end{align*}
+
+\section{}\label{sec:2-3}
+
+Prove that $n! > 2^n$ for $n \geq 4$.
+\hr
+
+For $n=4$, $4! = 24 > 16 = 2^{4}$.
+
+\medskip
+
+Assume that $n! > 2^n$. Then
+\begin{align*}
+    (n+1)! &= (n+1) \cdot n! \\
+    &> (n+1) \cdot 2^{n} \\
+    &> 2 \cdot 2^{n} \\
+    &= 2^{n+1}.\qedalign
+\end{align*}
+\pagebreak
+\section{}\label{sec:2-4}
+
+Prove that
+\[x + 4x + 7x + \dots + (3n - 2)x = \frac{n(3n-1)x}{2}\]
+
+for $n \in \mathbb{N}$.
+\hr
+
+For $n=1$, $x = \frac{1 \cdot 2 \cdot x}{2}$.
+
+Assume that $\sum_{k=1}^n (3k-2)x = \frac{n(3n-1)x}{2}$. Then
+\begin{align*}
+    \sum_{k=1}^{n+1} (3k-2)x &= (3(n+1)-2)x + \sum_{k=1}^n (3k-2)x \\
+    &= (3n+1)x + \frac{n(3n-1)x}{2} \\
+    &= \frac{1}{2} \cdot (6n + 2 + 3n^2 - n)x \\
+    &= \frac{1}{2} \cdot (3n^2 + 5n + 2)x \\
+    &= \frac{(n+1)(3n+2)x}{2}. \\
+    &= \frac{(n+1)(3(n+1)-1)x}{2}.\qedalign
+\end{align*}
+
+\section{}\label{sec:2-5}
+
+Prove that $10^{n+1} + 10^n + 1$ is divisible by 3 for $n \in \mathbb{N}$.
+\hr
+
+For $n=1$, $10^1 + 10^1 + 1 = 111 = 3 \cdot 37$.
+
+\medskip
+
+Assume that $3 \divides 10^{n+1} + 10^n + 1$, and so $10^{n+1} + 10^n + 1 = 3k$ for some $k \in \mathbb{N}$.
+
+\medskip
+
+We then have that
+\begin{align*}
+    10^{n+2} + 10^{n+1} + 1 &= 10^{n+2} + 10^{n+1} + 10 - 9 \\
+    &= 10 \cdot (10^{n+1} + 10^n + 1) - 9 \\
+    &= 30k - 9 \\
+    &= 3 \cdot (10k - 3),
+\end{align*}
+
+and so $3 \divides 10^{n+2} + 10^{n+1} + 1$.
+\qed
+\pagebreak
+\section{}\label{sec:2-6}
+
+Prove that $4 \cdot 10^{2n} + 9 \cdot 10^{2n-1} + 5$ is divisible by 99 for $n \in \mathbb{N}$.
+\hr
+
+For $n=1$, $4 \cdot 10^2 + 9 \cdot 10 + 5 = 495 = 5 \cdot 99$.
+
+\medskip
+
+Assume that $99 \divides 4 \cdot 10^{2n} + 9 \cdot 10^{2n-1} + 5$, and so $4 \cdot 10^{2n} + 9 \cdot 10^{2n-1} + 5 = 99k$ for some $k \in \mathbb{N}$.
+
+\medskip
+
+We then have that
+\begin{align*}
+    4 \cdot 10^{2n+2} + 9 \cdot 10^{2n+1} + 5 &= 4 \cdot 10^{2n+2} + 9 \cdot 10^{2n+1} + 500 - 495 \\
+    &= 100 \cdot (4 \cdot 10^{2n} + 9 \cdot 10^{2n-1} + 5) - 495 \\
+    &= 9900k - 495 \\
+    &= 99 \cdot (100k - 5),
+\end{align*}
+
+and so $99 \divides 4 \cdot 10^{2n+2} + 9 \cdot 10^{2n+1} + 5$.
+\qed
+
+\section{}\label{sec:2-7}
+
+Show that
+\[\sqrt[n]{a_1 a_2 \cdots a_n} \leq \frac{1}{n} \sum_{k=1}^n a_k.\]
+
+\hr
+
+Note that this is demonstrating that the geometric mean of a set of numbers is always at most equal to the arithmetic mean of that same set of numbers. This is a classic result known as the \define{AM-GM inequality}.
+
+\bigskip
+
+For any collection $S$ of $n$ real numbers (not necessarily all distinct), $G_S$ be the geometric mean $\prod_{a \in S} a^{\frac{1}{n}}$ of $S$ and $A_S$ be the arithmetic mean $\sum_{a \in S} \frac{a}{n}$ of $S$.
+
+If $a = b$ for all $a, b \in S$, then it is clear that $G_S = A_S = a$. Thus, assume not. This means that there must exist $x, y \in S$ such that $x < A_S < y$.
+
+Let $S'$ be $S$, except $x$ is replaced with $x' = A_S$ and $y$ is replaced with $y' = x + y - A_S$. Clearly $x' + y' = x + y$, and so $A_{S'} = A_S$.
+
+Further,
+\begin{align*}
+    x' \cdot y' - xy &= A_S(x + y - A_S) - xy \\
+    &= -A_S^2 + xA_S + yA_S - xy \\
+    &= (A_S - x)(y - A_S),
+\end{align*}
+
+Given that both terms are positive (since $x < A_S < y$), it follows that $x' \cdot y' - xy > 0$, and so $x' \cdot y' > xy$. Thus, $G_{S'} > G_S$.
+
+\pagebreak
+If $S'$ is still not all equal values, repeat this operation. Each time, we replace one value not equal to $A_S$ with $A_S$, and thus after at most $n - 1$ repetitions, we will have a collection $T$ consisting of $n$ copies of $A_S$. As mentioned at the start of this proof, this means that $A_S = G_T$. At every repetition of this process the geometric mean strictly increased while the arithmetic mean remained constant, and so it must be the case that $A_S > G_S$.
+
+Thus, for any such collection $S$, $A_S \geq G_S$, with $A_S = G_S$ only when all elements of $S$ are equal.
+\qed
+
+\section{}\label{sec:2-8}
+
+Prove the Leibniz rule for $f^{(n)}(x)$, where $f^{(n)}$ is the $n$th derivative of $f$; that is, show that
+\[(fg)^{(n)}(x) = \sum_{k=0}^n \binom{n}{k} f^{(k)}(x)g^{(n-k)}(x).\]
+\hr
+\section{}\label{sec:2-9}
+
+Use induction to prove that $1 + 2 + 2^2 + \dots + 2^n = 2^{n+1} - 1$ for $n \in \mathbb{N}$.
+\hr
+
+For $n=1$, this is clear: $1 + 2 = 3 = 2^2 - 1$.
+
+\medskip
+
+Assume for $n$. Then we have that
+\begin{align*}
+    1 + 2 + 2^2 \dots + 2^n + 2^{n+1} &= (2^{n+1} - 1) + 2^{n+1} \\
+    &= 2 \cdot 2^{n+1} - 1 \\
+    &= 2^{n+2} - 1.
+\end{align*}
+\qed
+\section{}\label{sec:2-10}
+
+Prove that
+\[\frac{1}{2} + \frac{1}{6} + \dots + \frac{1}{n(n+1)} = \frac{n}{n+1}\]
+
+for $n \in \mathbb{N}$.
+\hr
+
+For $n=1$, this is obvious.
+
+\medskip
+
+Assume for $n$. Then we have that
+\begin{align*}
+    \frac{1}{2} + \frac{1}{6} + \dots + \frac{1}{n(n+1)} + \frac{1}{(n+1)(n+2)} &= \frac{n}{n+1} + \frac{1}{(n+1)(n+2)} \\
+    &= \frac{n(n+2) + 1}{(n+1)(n+2)} \\
+    &= \frac{n^2 + 2n + 1}{(n+1)(n+2)} \\
+    &= \frac{(n+1)^2}{(n+1)(n+2)} \\
+    &= \frac{n+1}{n+2}.
+\end{align*}
+\qed
+\section{}\label{sec:2-11}
+
+if $x$ is a nonnegative real number, then show that $(1+x)^n - 1 \geq nx$ for $n = 0, 1, 2, \dots$.
+\hr
+
+For $n=0$, this is obvious.
+
+\medskip
+
+Assume for $n$. Then we have that
+\begin{align*}
+    (1+x)^{n+1} - 1 &= (1+x)\cdot(1+x)^n - (1+x) + x \\
+    &= (1+x) \cdot \left((1+x)^n - 1\right) + x \\
+    &\geq (1+x)(nx) + x \\
+    &= nx^2 + nx + x \\
+    &= nx^2 + (n+1)x \\
+    &\geq (n+1)x. \qedalign
+\end{align*}
+\section{Power Sets.}\label{sec:2-12}
+
+Let $X$ be a set. Define the \define{power set} of $X$, denoted $\powerset(X)$, to be the set of all subsets of $X$. For example,
+\[\powerset(\{a,b\}) = \{\emptyset,\{a\},\{b\},\{a,b\}\}.\]
+
+For every positive integer $n$, show that a set with exactly $n$ elements has a power set with exactly $2^n$ elements.
+\hr
+
+This can be proved both inductively and directly.
+
+\subsection{Inductive proof}\label{subsec:2-12-1}
+
+For $n=0$, $X = \emptyset$, and there is only one subset of $\emptyset$: $\emptyset$ itself. Thus $\powerset(X)$ has exactly $2^0 = 1$ element.
+
+\medskip
+
+Assume for $n$. Let $S = \{s_1, s_2, \dots, s_{n+1}\}$ be any set of $n+1$ elements and $T = \{s_1, s_2, \dots, s_n\}$. By assumption, we know that $\powerset(T)$ has $2^n$ elements.
+
+We can see that $S = T \cup \{s_{n+1}\}$. Thus, every subset $T' \subset T$ corresponds to exactly two subsets in $S$: $T'$ itself and $T' \cup \{s_{n+1}\}$. Therefore, $\powerset(S)$ must have twice as many elements as $\powerset(T)$, and so must have $2^{n+1}$ elements.
+\qed
+
+\subsection{Direct proof}\label{subsec:2-12-2}
+
+For any set $S$ with $n$ elements, every subset $S' \subset S$ is constructed by making a choice for every element $s \in S$ whether or not to include it. Every distinct set of choices corresponds to a specific subset and vice versa. Therefore, $\powerset(S)$ has as many elements as the number of ways of making a yes/no choice for every element $s \in S$; in other words, $2^n$ elements.
+\qed
+\section{}\label{sec:2-13}
+
+Prove that the two principles of mathematical induction stated in Section 2.1 are equivalent.
+\hr
+
+Assume the first principle: Given some statement $S(n)$ about integers $n \in \mathbb{N}$ and some integer $n_0$ such that $S(n_0)$ is true, if for all integers $k \geq n_0$, $S(k)$ implies $S(k+1)$, then $S(n)$ is true for all integers $n \geq n_0$.
+
+Let $S(n)$ be a statement such that for some integer $n_0$, $S(n_0), S(n_0 + 1), \dots, S(k)$ implies $S(k+1)$ for all $k \geq n_0$. Specifically then, $S(k)$ implies $S(k+1)$ for all such $k$, and so $S(n)$ is true for all integers $n \geq n_0$. Thus the second principle is true.
+
+\medskip
+
+Assume the second principle: Given some statement $S(n)$ about integers $n \in \mathbb{N}$ and some integer $n_0$ such that $S(n_0)$ is true, if for all integers $k \geq n_0$, $S(n_0), S(n_0 + 1), \dots, S(k)$ implies $S(k+1)$, then $S(n)$ is true for all integers $n \geq n_0$.
+
+Let $S(n)$ be a statement such that for some integer $n_0$, $S(k)$ implies $S(k+1)$ for all $k \geq n_0$. Select some particular $k$. We know that $S(n_0)$ implies $S(n_0 + 1)$, $S(n_0 + 1)$ implies $S(n_0 + 2)$, and so on up to $S(k-1)$ implies $S(k)$. Therefore if the statement is true for $S(n_0)$, it is true for all statements $S(n_0)$ through $S(k)$, and so by assumption it must be that $S(n)$ is true for all integers $n \geq n_0$. Thus the first principle is true.
+
+Therefore, the first principle and the second principle are equivalent.
+\qed
+\section{}\label{sec:2-14}
+
+Show that the Principle of Well-Ordering for the natural numbers implies that 1 is the smallest natural number. Use this result to show that the Principle of Well-Ordering implies the Principle of Mathematical Induction; that is, show that if $S \subset \mathbb{N}$ such that $1 \in S$ and $n + 1 \in S$ whenever $n \in S$, then $S = \mathbb{N}$.
+\hr
+\section{}\label{sec:2-15}
+
+For each of the following pairs of numbers $a$ and $b$, calculate $\gcd(a,b)$ and find integers $r$ and $s$ such that $\gcd(a,b) = ra + sb$.
+\hr
+\section{}\label{sec:2-16}
+
+Let $a$ and $b$ be nonzero integers. If there exist integers $r$ and $s$ such that $ar + bs = 1$, show that $a$ and $b$ are relatively prime.
+\hr
+\section{Fibonacci Numbers}\label{sec:2-17}
+
+The Fibonacci numbers are
+\[1,1,2,3,5,8,13,21,\dots.\]
+
+We can define them inductively by $f_1 = 1$, $f_2 = 1$, and $f_{n+2} = f_{n+1} + f_n$ for $n \in \mathbb{N}$.
+\begin{exlist}
+    \item Prove that $f_n < 2^n$.
+    \hrlist
+
+    For $n=1$, $1 < 2$, and for $n=2$, $1 < 4$. (We must show two base cases, as the definition for a Fibonacci number is dependent on the previous two numbers.)
+
+    \medskip
+
+    Assume for $n$.
+    \begin{align*}
+        f_{n+1} &= f_n + f_{n-1} \\
+        &< 2^n + 2^{n-1} \\
+        &< 2^{n+1} \qedalign
+    \end{align*}
+
+    \item Prove that $f_{n+1}f_{n-1} = f_n^2 + (-1)^n, n \geq 2$.
+    \hrlist
+
+    As a note, this result (usually phrased $f_{n+1}f_{n-1} - f_n^2 = (-1)^n$) is known as \define{Cassini's identity}, or \define{Simson's identity}.
+
+    The result is more straight-forward to derive starting from this form, and so the proof will proceed using it instead.
+
+    For $n=2$, $f_3 f_1 - f_2 = 2 \cdot 1 - 1 = 1$.
+
+    \medskip
+
+    Assume for $n$.
+    \begin{align*}
+        f_{n+2} f_n - f_{n+1}^2 &= (f_{n+1} + f_n)f_n - f_{n+1}^2 \\
+        &= f_{n+1} f_n + f_n^2 - f_{n+1}^2 \\
+        &= f_n^2 + f_{n+1} f_n - f_{n+1}^2 \\
+        &= f_n^2 - f_{n+1}(f_{n+1} - f_n) \\
+        &= f_n^2 - f_{n+1} f_{n-1} \\
+        &= f_n^2 - f_n^2 - (-1)^n \\
+        &= -(-1)^n \\
+        &= (-1)^{n+1}. \qedalign
+    \end{align*}
+    \pagebreak
+    \item Prove that $f_n = \left[\left(1 + \sqrt{5}\right)^n - \left(1 - \sqrt{5}\right)^n\right]/2^n\sqrt{5}$.
+    \hrlist
+
+    As a note, this formula is known as \define{Binet's formula}. Though it was not first derived via the following inductive proof, it is fairly easy to prove inductively.
+
+    For convenience of calculation, we rewrite this function as
+    \[\frac{1}{\sqrt{5}} \left[\left(\frac{1+\sqrt{5}}{2}\right)^n - \left(\frac{1-\sqrt{5}}{2}\right)^n\right].\]
+
+    For $n=1$, we have
+    \begin{align*}
+        \frac{1}{\sqrt{5}} \left[\left(\frac{1+\sqrt{5}}{2}\right)^1 - \left(\frac{1-\sqrt{5}}{2}\right)^1\right] &= \frac{1}{\sqrt{5}} \left(\frac{1+\sqrt{5}}{2} - \frac{1-\sqrt{5}}{2}\right) \\
+        &= \frac{1}{\sqrt{5}} \left(\frac{(1+\sqrt{5}) - (1-\sqrt{5})}{2}\right) \\
+        &= \frac{1}{\sqrt{5}} \left(\frac{2\sqrt{5}}{2}\right) \\
+        &= 1.
+    \end{align*}
+
+    Now, assume Binet's formula holds for all integers from 1 to $n$. In this proof, we will need the interesting fact that $(1 \pm \sqrt{5})/2 + 1 = \left(\left(1 \pm \sqrt{5}\right)/2\right)^2$, which we will first demonstrate.
+    \begin{align*}
+        \left(\frac{1 \pm \sqrt{5}}{2}\right)^2 &= \frac{1}{4} \left(1 \pm \sqrt{5}\right)^2 \\
+        &= \frac{1}{4} (1 \pm 2\sqrt{5} + 5) \\
+        &= \frac{6 \pm 2\sqrt{5}}{4} \\
+        &= \frac{3 \pm \sqrt{5}}{2} \\
+        &= \frac{1 \pm \sqrt{5}}{2} + 1.
+    \end{align*}
+    \pagebreak
+
+    Deriving this proof is far easier starting from $f_{n+1}$ and ending at Binet's formula for $n+1$, so we will proceed thusly.
+    \begin{align*}
+        f_{n+1} &= f_n + f_{n-1} \\
+        &= \begin{breakitem}
+                \frac{1}{\sqrt{5}} \left[\left(\frac{1+\sqrt{5}}{2}\right)^{n} - \left(\frac{1-\sqrt{5}}{2}\right)^{n}\right] \\
+                + \frac{1}{\sqrt{5}} \left[\left(\frac{1+\sqrt{5}}{2}\right)^{n-1} - \left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\right]
+            \end{breakitem} \\
+        &= \begin{breakitem}
+                \frac{1}{\sqrt{5}} \left[\left(\frac{1+\sqrt{5}}{2}\right)^{n} - \left(\frac{1-\sqrt{5}}{2}\right)^{n}\right. \\
+                \left.+ \left(\frac{1+\sqrt{5}}{2}\right)^{n-1} - \left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\right]
+           \end{breakitem} \\
+        &= \begin{breakitem}
+                \frac{1}{\sqrt{5}} \left[\left(\frac{1+\sqrt{5}}{2}\right)^{n} + \left(\frac{1+\sqrt{5}}{2}\right)^{n-1}\right. \\
+                \left.- \left(\frac{1-\sqrt{5}}{2}\right)^{n} - \left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\right]
+            \end{breakitem} \\
+        &= \begin{breakitem}
+                \frac{1}{\sqrt{5}} \left[\left(\left[\frac{1+\sqrt{5}}{2}\right]^{n} + \left[\frac{1+\sqrt{5}}{2}\right]^{n-1}\right)\right. \\
+                \left.- \left(\left[\frac{1-\sqrt{5}}{2}\right]^{n} + \left[\frac{1-\sqrt{5}}{2}\right]^{n-1}\right)\right]
+            \end{breakitem} \\
+        &= \begin{breakitem}
+                \frac{1}{\sqrt{5}} \left[\left(\frac{1+\sqrt{5}}{2}\right)^{n-1}\left(\frac{1+\sqrt{5}}{2} + 1\right)\right. \\
+                \left.- \left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\left(\frac{1-\sqrt{5}}{2} + 1\right)\right]
+            \end{breakitem} \\
+        &= \begin{breakitem}
+                \frac{1}{\sqrt{5}} \left[\left(\frac{1+\sqrt{5}}{2}\right)^{n-1}\left(\frac{1+\sqrt{5}}{2}\right)^2\right. \\
+                \left.- \left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\left(\frac{1-\sqrt{5}}{2}\right)^2\right]
+            \end{breakitem} \\
+        &= \frac{1}{\sqrt{5}} \left[\left(\frac{1+\sqrt{5}}{2}\right)^{n+1} - \left(\frac{1-\sqrt{5}}{2}\right)^{n+1}\right]. \qedalign
+    \end{align*}
+    \pagebreak
+    \item Show that $\phi = \lim_{n \rightarrow \infty} f_{n+1} / f_n = \left(\sqrt{5} + 1\right)/2$. The constant $\phi$ is known as the \define{golden ratio}.
+    \hrlist
+
+    This is relatively straightforward algebra. Define $\phi$ as above, and define $\psi$ as $(1 - \sqrt{5})/2$. Note that $|\psi / \phi| < 1$.
+    \begin{align*}
+        \lim_{n \rightarrow \infty} \frac{f_{n+1}}{f_n} &=  \lim_{n \rightarrow \infty} \frac{\left[\left(1 + \sqrt{5}\right)^{n+1} - \left(1 - \sqrt{5}\right)^{n+1}\right]/2^{n+1}\sqrt{5}}{\left[\left(1 + \sqrt{5}\right)^n - \left(1 - \sqrt{5}\right)^n\right]/2^n\sqrt{5}} \\
+        &=  \lim_{n \rightarrow \infty} \frac{\phi^{n+1} - \psi^{n+1}}{\phi^n - \psi^n} \\
+        &= \frac{\phi^{n+1}}{\phi^n} \cdot \lim_{n \rightarrow \infty} \frac{1 - (\psi/\phi)^{n+1}}{1 - (\psi/\phi)^{n}} \\
+        &= \phi \cdot \lim_{n \rightarrow \infty} \frac{1 - (\psi/\phi)^{n+1}}{1 - (\psi/\phi)^{n}} \\
+        &= \phi. \qedalign
+    \end{align*}
+
+\end{exlist}
+\section{}\label{sec:2-18}
+
+Let $a$ and $b$ be integers such that $\gcd(a,b) = 1$. Let $r$ and $s$ be integers such that $ar + bs = 1$. Prove that
+
+\[\gcd(a,s) = \gcd(r,b) = \gcd(r,s) = 1.\]
+\hr
+\section{}\label{sec:2-19}
+
+Let $x, y \in \mathbb{N}$ be relatively prime. If $xy$ is a perfect square, prove that $x$ and $y$ must both be perfect squares.
+\hr
+\section{}\label{sec:2-20}
+
+Using the division algorithm, show that every perfect square is of the form $4k$ or $4k+1$ for some nonnegative integer $k$.
+\hr
+\section{}\label{sec:2-21}
+
+Suppose that $a$, $b$, $r$, $s$ are pairwise relatively prime and that
+\begin{align*}
+    a^2 + b^2 &= r^2 \\
+    a^2 - b^2 &= s^2.
+\end{align*}
+
+Prove that $a$, $r$, and $s$ are odd and $b$ is even.
+\hr
+\section{}\label{sec:2-22}
+
+Let $n \in \mathbb{N}$. Use the division algorithm to prove that every integer is congruent mod $n$ to precisely one of the integers $0, 1, \dots, n-1$. Conclude that if $r$ is an integer, then there is exactly one $s$ in $\mathbb{Z}$ such that $0 \leq s < n$ and $[r] = [s]$. Hence, the integers are indeed partitioned by congruence mod $n$.
+\hr
+\section{}\label{sec:2-23}
+
+Define the \define{least common multiple} of two nonzero integers $a$ and $b$, denoted by $\lcm(a,b)$, to be the nonnegative integer m such that both $a$ and $b$ divide $m$, and if $a$ and $b$ divide any other integer $n$, then $m$ also divided $n$. Prove there exists a unique least common multiple for any two integers $a$ and $b$.
+\hr
+\section{}\label{sec:2-24}
+
+If $d = \gcd(a,b)$ and $m = \lcm(a,b)$, prove that $dm = |ab|$.
+\hr
+\section{}\label{sec:2-25}
+
+Show that $\lcm(a,b) = ab$ if and only if $\gcd(a,b) = 1$.
+\hr
+\section{}\label{sec:2-26}
+
+Prove that $\gcd(a,c) = \gcd(b,c) = 1$ if and only if $\gcd(ab,c) = 1$ for integers $a$, $b$, and $c$.
+\hr
+\section{}\label{sec:2-27}
+
+Let $a, b, c \in \mathbb{Z}$. Prove that if $\gcd(a, b) = 1$ and $a \divides bc$, then $a \divides c$.
+\hr
+
+Without loss of generality, let $p$ be any prime factor of $a$. Since $a \divides bc$, we must have that $p \divides bc$, and so by the Fundamental Theorem of Arithmetic, $p$ must be a prime factor of $bc$. However, $a \notdivides b$, and so $p \notdivides b$. Therefore, $p$ is not a prime factor of $b$, and so $p$ must be a prime factor of $c$.
+
+Let $m, n \in \mathbb{Z}$ be such that $pm = a$ and $an = pmn = c$. Now, repeat the previous argument, replacing $a$ with $m$ and $c$ with $mn$. As any prime factorization has only a finite number of elements, repeating this argument will eventually terminate once all prime factors of $a$ are exhausted. Therefore, all prime factors of $a$ are also prime factors of $c$, and so $a \divides c$.
+\section{}\label{sec:2-28}
+
+Let $p \geq 2$. Prove that if $2^p - 1$ is prime, then $p$ must also be prime.
+\hr
+\section{}\label{sec:2-29}
+
+Prove that there are an infinite number of primes of the form $6n+5$.
+\hr
+\section{}\label{sec:2-30}
+
+Prove that there are an infinite number of primes of the form $4n-1$.
+\hr
+\section{}\label{sec:2-31}
+
+Using the fact that 2 is prime, show that there do not exist integers $p$ and $q$ such that $p^2 = 2q^2$. Demonstrate that therefore $\sqrt{2}$ cannot be a rational number.
+\hr
+
+Assume otherwise, and further, assume that they are such that the fraction $\frac{p}{q} = \sqrt{2}$ is in least terms. As $p^2 = 2q^2$, it must be the case that $2 \divides p^2$, and so 2 is a prime factor of $p^2$. This is only possible if 2 is also a prime factor of $p$, and so it follows that $2 \divides p$.
+
+Let $m$ be such that $p = 2m$, and so $4m^2 = 2q^2$, or $2m^2 = q^2$. By the same argument as with $p$, it thus follows that $2 \divides q$. Let $n$ be such that $q = 2n$. Then $2m^2 = 4n^2$, or $m^2 = 2n^2$, and so $\frac{m}{n} = \sqrt{2}$. However, we had previously taken $p$ and $q$ such that $\frac{p}{q} = \sqrt{2}$ was in least terms; contradiction.
+
+Therefore, it must be that $\sqrt{2}$ is irrational.\qed
